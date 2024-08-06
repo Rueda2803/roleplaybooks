@@ -1,13 +1,8 @@
 ---
 - name: Saludo Playbook role
   hosts: all
-  tasks:
-  - name: Print debug message
-    debug:
-      msg: Hello, "{{ frase }}"!
-
-  #roles:
-    #- role: roles/saludo
-      #when: "{{ frase }}" == 'hi'
+  roles:
+    - role: roles/saludo
+      when: frase == 'hi'
     #- role: roles/apache
     #  when: frase == 'apache'
