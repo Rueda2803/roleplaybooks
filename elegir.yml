@@ -3,6 +3,6 @@
   hosts: all
   roles:
     - role: roles/Add_user
-      when: frase == 'user'
+      when: frase == 'usuario'
     - role: roles/group_add
-      when: frase == 'group'
+      when: frase == 'grupo'
