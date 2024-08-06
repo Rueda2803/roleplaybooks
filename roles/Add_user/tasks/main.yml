@@ -5,7 +5,7 @@
     identity: miguel
     firstname: Miguel
     surname: Smith
-    password: redhat
+    password: redhat2024GT
     domain_username: REDSOFT\Administrator
     domain_password: Redsoft2024
     state: present
