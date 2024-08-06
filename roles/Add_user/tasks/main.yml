@@ -1,0 +1,14 @@
+---
+- name: User in an AD
+  hosts: all
+  tasks:
+    - name: Ensure user user is create
+      microsoft.ad.user:
+        name: Miguel
+        identity: miguel
+        firstname: Miguel
+        surname: Smith
+        password: redhat
+        domain_username: REDSOFT\Administrator
+        domain_password: Redsoft2024
+        state: present
