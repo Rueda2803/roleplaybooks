@@ -4,5 +4,5 @@
   roles:
     - role: roles/saludo
       when: frase == 'hi'
-    #- role: roles/apache
-    #  when: frase == 'apache'
+    - role: roles/apache
+      when: frase == 'apache'
