@@ -1,8 +1,8 @@
 ---
 - name: Saludo Playbook role
   hosts: all
-  #vars:
-    #frase:
+  vars:
+    frase:
   roles:
     - role: roles/saludo
       when: frase == 'hi'
