@@ -4,7 +4,7 @@
   #vars:
     #frase:
   roles:
-    - role: /roles/saludo
+    - role: roles/saludo
       when: frase == 'hi'
-    - role: /roles/apache
+    - role: roles/apache
       when: frase == 'apache'
