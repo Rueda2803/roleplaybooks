@@ -1,0 +1,8 @@
+---
+- name: Elegir entre usuario o grupo
+  hosts: all
+  roles:
+    - role: roles/Add_user
+      when: frase == 'user'
+    - role: roles/group_add
+      when: frase == 'group'
