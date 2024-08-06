@@ -1,10 +1,7 @@
 ---
-- name: Create a group in an AD
-  hosts: all
-  tasks:
-    - name: Create a group
-      microsoft.ad.group:
-        name: Roles_pruebas
-        scope: global
-        state: present
+- name: Create a group
+  microsoft.ad.group:
+    name: Roles_pruebas
+    scope: global
+    state: present
   
